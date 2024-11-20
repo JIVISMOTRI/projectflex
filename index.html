@@ -4,8 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+<!-- Удаляем маркеры: list-style-type: none;. В панели навигации маркеры списка не нужны.
+Зададим margin: 0; и padding: 0;, чтобы сбросить установки браузера по умолчанию. --> 
+<style> 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+</style>
+
 </head>
 <body>
+
+<!--  Как сделать поисковую панель Шаг 1) Добавляем HTML:--> 
+  <div class="topnav">
+    <link rel="stylesheet" href="styles/search panel.css">
+    <a class="active" href="#home">Главная</a>
+    <a href="#about">О нас</a>
+    <a href="#contact">Контакты</a>
+    <div class="search-container">
+      <form action="/action_page.php">
+        <input type="text" placeholder="Поиск.." name="search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+    </div>
+  </div>
+
+
+
     <header>
         <h1>Translator's world</h1>
         <a href="#">Sign up</a>
