@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Translator's world</title>
 
 <!-- Удаляем маркеры: list-style-type: none;. В панели навигации маркеры списка не нужны.
 Зададим margin: 0; и padding: 0;, чтобы сбросить установки браузера по умолчанию. --> 
@@ -18,25 +18,30 @@ ul {
 </head>
 <body>
 
-<!--  Как сделать поисковую панель Шаг 1) Добавляем HTML:--> 
+<!--  Как сделать поисковую панель? Эксперименты --> 
   <div class="topnav">
-    <link rel="stylesheet" href="styles/search panel.css">
+    <link rel="stylesheet" href="styles/search_panel.css">
+    <!-- Тут нужно разобраться -->
+    <img src="images/logo_no_background.png" alt="Логотип" width="150" height="150">
+
     <a class="active" href="#home">Главная</a>
     <a href="#about">О нас</a>
     <a href="#contact">Контакты</a>
+    <a href="#">Sign up</a>
     <div class="search-container">
       <form action="/action_page.php">
-        <input type="text" placeholder="Поиск.." name="search">
-        <button type="submit"><i class="fa fa-search"></i></button>
+        <input type="text" placeholder="Поиск..." name="search">
+        <button type="submit">Поиск<i class="fa fa-search"></i></button>
       </form>
     </div>
   </div>
 
-
+<!-- Тут пошел header -->
 
     <header>
+        <img src="images/logo_no_background.png" alt="Логотип" width="150" height="150">
         <h1>Translator's world</h1>
-        <a href="#">Sign up</a>
+        <a href="#"></a>
     </header>
     <main>Основное содержимое</main>
     <footer>
