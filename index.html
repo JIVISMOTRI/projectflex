@@ -4,65 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Translator's world</title>
-
-<!-- Удаляем маркеры: list-style-type: none;. В панели навигации маркеры списка не нужны.
-Зададим margin: 0; и padding: 0;, чтобы сбросить установки браузера по умолчанию. --> 
-<style> 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-</style>
-
+    <!-- иконка вкладки браузера -->
+    <link rel="icon" href="images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
 
 <!--  Как сделать поисковую панель? Эксперименты --> 
+
+<header> 
+  
+  <a href="#"></a>
   <div class="topnav">
+    
     <link rel="stylesheet" href="styles/search_panel.css">
-    <!-- Тут нужно разобраться -->
-    <img src="images/logo_no_background.png" alt="Логотип" width="150" height="50">
+    
+    <!-- тут нужно подумать, нужно ли вообще изображение -->
+    <!-- <img src="images/icon.png" alt="Логотип" class="nav-img"> -->
     <a class="active" href="#home">Главная</a>
     <a href="#about">О нас</a>
     <a href="#contact">Контакты</a>
     <a href="#">Sign up</a>
-    <div class="search-container">
-      <form action="/action_page.php">
-        <input type="text" placeholder="Поиск..." name="search">
-        <button type="submit">Поиск<i class="fa fa-search"></i></button>
-      </form>
+    <div class="search-box">
+      <button class="btn-search"><i class="fas fa-search"></i></button>
+      <input type="text" class="input-search" placeholder="Type to Search...">
     </div>
   </div>
+</header>
 
-  <!-- Боковая панель. Ее расположение можно прописать отдельно 
-   <style>
-        .content {
-            width: 70%;
-            float: left;
-        }
-
-        aside {
-            width: 25%;
-            float: right;
-            background-color: #f4f4f4;
-            padding: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-    </style> -->
   <aside>
     <h2>Боковая панель</h2>
     <p>Эта информация находится в теге <code>&lt;aside&gt;</code>.</p>
   </aside>
-
-<!-- Тут пошел header -->
-
-    <header>
-        <h1>Translator's world</h1>
-        <a href="#"></a>
-    </header>
-
     <main>Основное содержимое</main>
+    <h1>Translator's world</h1>
+    <article>
+        <h2>Статья</h2>
+        <p>Эта информация находится в теге <code>&lt;article&gt;</code>.</p>
+    </article>
+<hr>
+    
     <footer>
         <p>Яроха Егор ЛВ-21</p>
     </footer>
